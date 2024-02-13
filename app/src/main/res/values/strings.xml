@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Motivation</string>
+    <string name="validation_mandatory_name">Informe seu nome.</string>
+</resources>

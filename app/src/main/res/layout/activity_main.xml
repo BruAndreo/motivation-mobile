@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/view_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:background="@color/purple">
+
+        <ImageView
+            android:id="@+id/icon_all"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            app:tint="@color/dark_purple"
+            android:src="@drawable/ic_all_inclusive" />
+
+        <ImageView
+            android:id="@+id/icon_happy"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            app:tint="@color/dark_purple"
+            android:src="@drawable/ic_happy" />
+
+        <ImageView
+            android:id="@+id/icon_sunny"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            app:tint="@color/dark_purple"
+            android:src="@drawable/ic_sunny" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_hello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/view_menu"
+        android:layout_marginTop="16dp"
+        android:text="Olá, Kotlin!"
+        android:textSize="18sp"
+        android:fontFamily="@font/cabin" />
+
+    <TextView
+        android:id="@+id/text_phrase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Riscos devem ser corridos, porque o maior perigo é não arriscar nada"
+        android:textSize="22sp"
+        android:fontFamily="@font/cabin"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/black" />
+
+    <View
+        android:layout_width="128dp"
+        android:layout_height="4dp"
+        android:background="@color/purple"
+        android:layout_below="@id/text_phrase"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/button_new_phrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/dark_purple"
+        android:fontFamily="@font/cabin"
+        android:padding="16dp"
+        android:textAllCaps="true"
+        android:text="Nova Frase" />
+
+</RelativeLayout>
